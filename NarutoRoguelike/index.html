@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Trystero автоматически использует публичную сеть для поиска игроков -->
+  <script type="module">
+    import { joinRoom } from 'https://esm.run/trystero';
+    window.Trystero = { joinRoom };
+  </script>
+  <title>Рогалик: Наруто v1</title>
+  <style>
+    body{margin:0;background:#0f0f18;display:flex;justify-content:center;align-items:center;height:100vh;font-family:monospace;color:#eee;overflow:hidden}
+    canvas{background:#1a1a2e;display:block;max-width:100vw;max-height:100vh}
+  </style>
+</head>
+<body>
+<canvas id="game" width="1800" height="1100"></canvas>
+
+<!-- ============ МОДУЛИ (порядок важен!) ============ -->
+<script src="js/01_core.js"></script>
+<script src="js/02_artifacts.js"></script>
+<script src="js/03_characters.js"></script>
+<script src="js/04_enemies_bosses.js"></script>
+<script src="js/05_player.js"></script>
+<script src="js/06_entities.js"></script>
+<script src="js/07_gameplay.js"></script>
+<script src="js/08_screens.js"></script>
+<script src="js/09_main.js"></script>
+<script src="js/10_network.js"></script>
+
+</body>
+</html>
